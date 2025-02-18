@@ -1,5 +1,6 @@
 # TODO: Agrega el código de las clases del modelo aquí. Borra este comentario al terminar.
 from datetime import datetime
+from typing import List
 
 
 class Note:
@@ -21,5 +22,13 @@ class Note:
 
     def __str__(self):
         return f"date: {self.creation_date}\n{self.title}: {self.text}"
+
+class Notebook:
+    def __init__(self):
+        self.notes: List[Note] = []
+
+
+
+
 
 
