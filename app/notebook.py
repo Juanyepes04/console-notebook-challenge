@@ -1,6 +1,5 @@
 # TODO: Agrega el código de las clases del modelo aquí. Borra este comentario al terminar.
 from datetime import datetime
-from typing import List
 
 
 class Note:
@@ -25,7 +24,9 @@ class Note:
 
 class Notebook:
     def __init__(self):
-        self.notes: List[Note] = []
+        self.notes = []
+
+
 
 
 
