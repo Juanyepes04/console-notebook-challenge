@@ -15,4 +15,10 @@ class Note:
         self.creation_date = datetime.now()
         self.tags = []
 
+    def add_tag(self, tag: str):
+        if tag not in self.tags:
+            self.tags.append(tag)
+
+
+
 
